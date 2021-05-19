@@ -486,10 +486,6 @@
                             content: op.table,
                             container: 'body',
                             placement: op.placement
-                        }).on('inserted.bs.popover', function() {
-                            var el = $this.data('bs.popover');
-                            var tip = ($.fn.bsVersion() === '3.x') ? el.tip() : $(el.getTipElement())
-                            tip.addClass('iconpicker-popover');
                         }).on('shown.bs.popover', function () {
                             data.switchPage(op.icon);
                             data.bindEvents();
